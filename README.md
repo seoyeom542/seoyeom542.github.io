@@ -2,4 +2,6 @@
 
 ## 서버 띄우기
 
-$ bundle exec jekyll serve
+```bash
+bundle exec jekyll serve
+```
