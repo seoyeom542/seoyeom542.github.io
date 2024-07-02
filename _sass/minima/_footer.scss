@@ -1,0 +1,19 @@
+.footer {
+  width: 769px;
+  margin: 48px auto;
+  &__social-icon {
+    cursor: pointer;
+    border: solid 2px #aba398;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    &__github-icon {
+      width: 15.5px;
+      height: 17px;
+      fill: #aba398;
+    }
+  }
+}
