@@ -1,0 +1,31 @@
+.home {
+  &__total-post-list {
+    &--total-button {
+      font-size: 13px;
+      border: none;
+    }
+    &--total-lable {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: solid 1px #000000;
+    }
+    &--total-count {
+      border: none;
+    }
+  }
+  &__post {
+    display: flex;
+    justify-content: space-between;
+    height: 36px;
+    border-bottom: solid 1px #000000;
+    &--title {
+      sidplay: block;
+      font-size: 12px;
+      line-height: 36px;
+    }
+    &--dte {
+      font-size: 12px;
+      line-height: 36px;
+    }
+  }
+}
