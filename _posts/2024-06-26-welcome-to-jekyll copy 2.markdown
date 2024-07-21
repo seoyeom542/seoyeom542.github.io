@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Welcome to Jekyll!"
+title: "[JS] slice()"
 date: 2024-06-26 15:52:44 +0900
 categories: jekyll update
 ---
