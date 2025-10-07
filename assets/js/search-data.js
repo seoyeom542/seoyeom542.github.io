@@ -72,7 +72,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-a-post-with-plotly-js",
+            },{id: "post-github-블로그-al-folio-기반-블로그-만들기",
+        
+          title: "[Github 블로그] al-folio 기반 블로그 만들기",
+        
+        description: "템플릿 사용해서 블로그 만들어보기",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/gitblog_1/";
+          
+        },
+      },{id: "post-a-post-with-plotly-js",
         
           title: "a post with plotly.js",
         
