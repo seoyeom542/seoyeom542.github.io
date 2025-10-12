@@ -3,7 +3,7 @@ layout: page
 permalink: /teaching/
 title: teaching
 description: Materials for courses you taught. Replace this text with your description.
-nav: true
+nav: false # 내용 추가해서 publish 해야함
 nav_order: 6
 ---
 
