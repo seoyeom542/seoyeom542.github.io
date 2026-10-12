@@ -37,10 +37,10 @@
         <span></span><span></span><span></span>
       </button>
       <nav id="site-nav" class="site-nav">
-        <a href="#projects">사례</a>
-        <a href="#plans">작업 형태</a>
+        <a href="#projects">대표 사례</a>
+        <a href="#works">전체 프로젝트</a>
         <a href="#career">경력</a>
-        <a href="#faq">FAQ</a>
+        <a href="#process">일하는 방식</a>
         <a class="nav-cta" href="#contact">문의하기</a>
       </nav>
     </div>
@@ -50,6 +50,7 @@
     <!-- 히어로 (벤토 그리드) -->
     <section class="hero">
       <div class="container bento">
+        <p class="print-only print-head"><strong>오서연</strong>웹 개발자 · seoyeom542@gmail.com · seoyeom542.github.io</p>
         <div class="tile tile-intro">
           <!-- TODO: 작업 가능 시간 확정 -->
           <p class="status"><span class="dot"></span>외주 · 유지보수 문의 받는 중</p>
@@ -60,7 +61,7 @@
           </p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#contact">유지보수 문의하기</a>
-            <a class="btn btn-ghost" href="#projects">작업 사례 보기</a>
+            <a class="btn btn-ghost" href="#works">프로젝트 전체 보기</a>
           </div>
         </div>
 
@@ -78,13 +79,13 @@
           <strong><span class="count" data-to="4">4</span>년</strong>
           <span>법률 서비스 웹 개발</span>
         </div>
+        <a class="tile tile-stat tile-stat-dark" href="#works">
+          <strong><span class="count" data-to="works">16</span>건</strong>
+          <span>참여 프로젝트 전체 보기 →</span>
+        </a>
         <div class="tile tile-stat tile-stat-accent">
           <strong>+<span class="count" data-to="20">20</span>건</strong>
           <span>주 평균 상담 유입 증가</span>
-        </div>
-        <div class="tile tile-stat">
-          <strong>약 <span class="count" data-to="10">10</span>%</strong>
-          <span>랜딩페이지 상담 유입률 상승</span>
         </div>
 
         <div class="tile tile-rotate">
@@ -119,39 +120,14 @@
       </div>
     </div>
 
-    <!-- 강점 3가지 -->
-    <section class="section" id="strengths">
-      <div class="container">
-        <p class="kicker reveal">Why me</p>
-        <h2 class="section-title reveal">함께 일하면 좋은 점</h2>
-        <div class="grid grid-3">
-          <article class="card reveal">
-            <span class="card-num">01</span>
-            <h3>상담 유입을 늘리는 개선</h3>
-            <p>법무법인 홈페이지의 상담 연결 오류를 고쳐 상담 유입을 주 평균 약 20건 늘렸고, 분야별 랜딩페이지로 기존 홈페이지 대비 상담 유입률을 약 10% 높였습니다.</p>
-          </article>
-          <article class="card reveal">
-            <span class="card-num">02</span>
-            <h3>레거시 시스템 전환</h3>
-            <p>PHP 5·그누보드 기반 서비스를 React·Tailwind CSS로 다시 만들었고, 외주에 맡기던 개발을 인하우스 체제로 옮겼습니다.</p>
-          </article>
-          <article class="card reveal">
-            <span class="card-num">03</span>
-            <h3>기획부터 운영까지</h3>
-            <p>서비스 기획, PO, 개발을 모두 경험했습니다. 요청의 의도를 먼저 확인하고, 논의한 내용은 문서로 남겨 같은 문제가 반복되지 않게 합니다.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
     <!-- 프로젝트 사례 -->
     <section class="section section-alt" id="projects">
       <div class="container">
-        <p class="kicker reveal">Case study</p>
-        <h2 class="section-title reveal">프로젝트 사례</h2>
+        <p class="kicker reveal">Featured</p>
+        <h2 class="section-title reveal">대표 사례</h2>
         <p class="section-desc reveal">고객사 보호를 위해 실제 화면과 내부 데이터 대신 구조를 그림으로 보여드립니다.</p>
 
-        <article class="case reveal">
+        <article class="case reveal" id="case-a">
           <div class="case-visual" aria-hidden="true">
             <div class="mock-browser">
               <div class="mock-bar"><i></i><i></i><i></i></div>
@@ -176,10 +152,27 @@
               <dt>결과</dt><dd>상담 유입 주 평균 약 20건 증가, 랜딩페이지 상담 유입률 기존 홈페이지 대비 약 10% 상승</dd>
             </dl>
             <ul class="tags tags-sm"><li>JavaScript</li><li>HTML/CSS</li><li>PHP</li><li>MySQL</li></ul>
+            <!-- TODO(사례 A): 기간, 팀 구성·역할 비중, 어려웠던 점 → 해결 채우기 -->
+            <details class="case-more">
+              <summary><span class="when-closed">자세히 보기</span><span class="when-open">접기</span></summary>
+              <dl class="case-detail">
+                <dt>기간</dt><dd class="is-todo">작성 중</dd>
+                <dt>팀 구성 · 역할</dt><dd class="is-todo">작성 중</dd>
+                <dt>직접 한 일</dt>
+                <dd>
+                  <ul>
+                    <li>상담 연결 오류 원인을 찾아 수정</li>
+                    <li>회사 대표 홈페이지의 버그 수정과 신규 페이지 개발</li>
+                    <li>마케팅용 업무 분야별 랜딩페이지 개발과 운영</li>
+                  </ul>
+                </dd>
+                <dt>어려웠던 점 → 해결</dt><dd class="is-todo">작성 중</dd>
+              </dl>
+            </details>
           </div>
         </article>
 
-        <article class="case case-reverse reveal">
+        <article class="case case-reverse reveal" id="case-b">
           <div class="case-visual" aria-hidden="true">
             <div class="migrate">
               <div class="migrate-box migrate-old">
@@ -205,10 +198,27 @@
               <dt>결과</dt><dd>수기·분산 관리되던 사건 데이터를 하나의 형식으로 통합해 관리</dd>
             </dl>
             <ul class="tags tags-sm"><li>React</li><li>Tailwind CSS</li></ul>
+            <!-- TODO(사례 B): 기간, 팀 구성·역할 비중, 어려웠던 점 → 해결 채우기 -->
+            <details class="case-more">
+              <summary><span class="when-closed">자세히 보기</span><span class="when-open">접기</span></summary>
+              <dl class="case-detail">
+                <dt>기간</dt><dd class="is-todo">작성 중</dd>
+                <dt>팀 구성 · 역할</dt><dd class="is-todo">작성 중</dd>
+                <dt>직접 한 일</dt>
+                <dd>
+                  <ul>
+                    <li>외주 업체에 맡기던 개발을 인하우스 개발 체제로 전환</li>
+                    <li>PHP 5·그누보드 서비스를 React·Tailwind CSS로 다시 작성</li>
+                    <li>어드민 서버의 데이터 형식에 맞춰 데이터 활용 방식을 재정리</li>
+                  </ul>
+                </dd>
+                <dt>어려웠던 점 → 해결</dt><dd class="is-todo">작성 중</dd>
+              </dl>
+            </details>
           </div>
         </article>
 
-        <article class="case reveal">
+        <article class="case reveal" id="case-c">
           <div class="case-visual" aria-hidden="true">
             <ol class="flow">
               <li>상담 신청</li>
@@ -227,18 +237,252 @@
               <dt>결과</dt><dd>기존 문의 대비 10% 이상 상담을 추가로 연결</dd>
             </dl>
             <ul class="tags tags-sm"><li>JavaScript</li><li>React</li></ul>
+            <!-- TODO(사례 C): 기간, 팀 구성·역할 비중, 어려웠던 점 → 해결 채우기 -->
+            <details class="case-more">
+              <summary><span class="when-closed">자세히 보기</span><span class="when-open">접기</span></summary>
+              <dl class="case-detail">
+                <dt>기간</dt><dd class="is-todo">작성 중</dd>
+                <dt>팀 구성 · 역할</dt><dd class="is-todo">작성 중</dd>
+                <dt>직접 한 일</dt>
+                <dd>
+                  <ul>
+                    <li>비회원 상담 프로세스의 프론트엔드 개발</li>
+                    <li>백엔드 개발자와 협업해 회원/비회원 상담 흐름 설계</li>
+                  </ul>
+                </dd>
+                <dt>어려웠던 점 → 해결</dt><dd class="is-todo">작성 중</dd>
+              </dl>
+            </details>
           </div>
         </article>
       </div>
     </section>
 
-    <!-- 작업 형태 -->
-    <section class="section" id="plans">
+    <!-- 전체 프로젝트 -->
+    <section class="section" id="works">
       <div class="container">
-        <p class="kicker reveal">Plans</p>
-        <h2 class="section-title reveal">작업 형태</h2>
+        <p class="kicker reveal">All projects</p>
+        <h2 class="section-title reveal">전체 프로젝트</h2>
+        <p class="section-desc reveal">회사 내부 정보는 빼고, 기능과 결과 중심으로 정리했습니다.</p>
+        <div class="filters reveal" role="group" aria-label="프로젝트 분류">
+          <button class="filter is-active" type="button" data-filter="all">전체</button>
+          <button class="filter" type="button" data-filter="law">법률</button>
+          <button class="filter" type="button" data-filter="med">의료</button>
+          <button class="filter" type="button" data-filter="web">웹</button>
+          <button class="filter" type="button" data-filter="app">앱</button>
+          <button class="filter" type="button" data-filter="admin">어드민</button>
+          <button class="filter" type="button" data-filter="plan">기획</button>
+        </div>
+        <!-- TODO: 현재 회사 작업을 카드로 추가 -->
+        <div class="works">
+          <article class="work is-featured" data-tags="law web firm">
+            <p class="work-meta">법무법인 · 2024–2025</p>
+            <h3>홈페이지 유지보수</h3>
+            <p class="work-desc">대표 홈페이지의 버그 수정과 신규 페이지 개발</p>
+            <p class="work-result">상담 유입 주 +20건</p>
+            <div class="work-foot"><span class="work-role">개발 · 유지보수</span><a class="work-link" href="#case-a">대표 사례 보기 →</a></div>
+          </article>
+          <article class="work is-featured" data-tags="law web firm">
+            <p class="work-meta">법무법인 · 2024–2025</p>
+            <h3>업무 분야별 마케팅 랜딩페이지</h3>
+            <p class="work-desc">광고 유입을 받을 분야별 랜딩페이지 개발과 운영</p>
+            <p class="work-result">상담 유입률 +10%</p>
+            <div class="work-foot"><span class="work-role">개발 · 운영</span><a class="work-link" href="#case-a">대표 사례 보기 →</a></div>
+          </article>
+          <article class="work is-featured" data-tags="law web admin firm">
+            <p class="work-meta">법무법인 · 2024–2025</p>
+            <h3>PHP 5 · 그누보드 → React 재구축</h3>
+            <p class="work-desc">외주로 만든 서비스를 사내 데이터 구조에 맞춰 다시 작성</p>
+            <p class="work-result">외주 → 인하우스 전환</p>
+            <div class="work-foot"><span class="work-role">개발</span><a class="work-link" href="#case-b">대표 사례 보기 →</a></div>
+          </article>
+          <article class="work" data-tags="law admin firm">
+            <p class="work-meta">법무법인 · 2024–2025</p>
+            <h3>사건 관리 어드민</h3>
+            <p class="work-desc">사내 어드민의 기능 개발과 수정, 분산된 사건 데이터 통합</p>
+            <p class="work-result">데이터 관리 일원화</p>
+            <div class="work-foot"><span class="work-role">개발 · 유지보수</span></div>
+          </article>
+          <article class="work" data-tags="law app firm">
+            <p class="work-meta">법무법인 · 2024–2025</p>
+            <h3>CALL MANAGER 안드로이드 앱</h3>
+            <p class="work-desc">대행사가 만든 업무용 앱을 넘겨받아 유지보수, 통화 기록을 상담 데이터로 연결</p>
+            <p class="work-result">상담 데이터 체계화</p>
+            <div class="work-foot"><span class="work-role">유지보수</span></div>
+          </article>
+          <article class="work is-featured" data-tags="law web lawtalk">
+            <p class="work-meta">로톡 · 2020–2022</p>
+            <h3>비회원 유료상담</h3>
+            <p class="work-desc">회원가입 없이 상담할 수 있는 흐름 추가</p>
+            <p class="work-result">상담 +10% 이상</p>
+            <div class="work-foot"><span class="work-role">프론트엔드</span><a class="work-link" href="#case-c">대표 사례 보기 →</a></div>
+          </article>
+          <article class="work" data-tags="law web lawtalk">
+            <p class="work-meta">로톡 · 2020–2022</p>
+            <h3>양방향 후기 평가</h3>
+            <p class="work-desc">의뢰인만 평가하던 구조에 변호사의 의뢰인 평가 추가, 질문 범위 확대</p>
+            <p class="work-result">관련 VOC 감소</p>
+            <div class="work-foot"><span class="work-role">풀스택</span></div>
+          </article>
+          <article class="work" data-tags="law web lawtalk">
+            <p class="work-meta">로톡 · 2020–2022</p>
+            <h3>변호사 이벤트 쿠폰</h3>
+            <p class="work-desc">변호사가 직접 쿠폰을 발행해 상담을 늘리는 기능</p>
+            <p class="work-result">변호사 인쿼리 평균 +15%</p>
+            <div class="work-foot"><span class="work-role">풀스택</span></div>
+          </article>
+          <article class="work" data-tags="law web lawtalk">
+            <p class="work-meta">로톡 · 2020–2022</p>
+            <h3>AI 형량예측 서비스</h3>
+            <p class="work-desc">일반 사용자가 예상 형량을 미리 확인하는 서비스, 연구소와 협업</p>
+            <p class="work-result">MAU +10%</p>
+            <div class="work-foot"><span class="work-role">프론트엔드</span></div>
+          </article>
+          <article class="work" data-tags="law web admin lawtalk">
+            <p class="work-meta">로톡 · 2020–2022</p>
+            <h3>변호사 가입 프로세스 개선</h3>
+            <p class="work-desc">변호사 증명 단계를 추가해 서류를 수기로 받던 과정 제거</p>
+            <p class="work-result">CS 운영 시간 단축</p>
+            <div class="work-foot"><span class="work-role">프론트엔드</span></div>
+          </article>
+          <article class="work" data-tags="law web lawtalk">
+            <p class="work-meta">로톡 · 2020–2022</p>
+            <h3>변호사 나만의 배너</h3>
+            <p class="work-desc">변호사가 외부 활동에 쓰는 퍼스널 배너 제작 기능</p>
+            <p class="work-result">외부 유입 경로 확대</p>
+            <div class="work-foot"><span class="work-role">풀스택</span></div>
+          </article>
+          <article class="work" data-tags="med app plan soldoc">
+            <p class="work-meta">솔닥 · 2022–2024</p>
+            <h3>카카오톡 서비스의 앱 전환</h3>
+            <p class="work-desc">카카오톡 안에서만 쓰던 비대면 진료 서비스를 앱으로 기획</p>
+            <p class="work-result">사용 채널 확대</p>
+            <div class="work-foot"><span class="work-role">PO · 기획</span></div>
+          </article>
+          <article class="work" data-tags="med admin soldoc">
+            <p class="work-meta">솔닥 · 2022–2024</p>
+            <h3>의사 · 약사 어드민 개선</h3>
+            <p class="work-desc">현장 CS를 받아 매일 쓰는 어드민 기능을 빠르게 개선</p>
+            <p class="work-result">요청 반영 주기 단축</p>
+            <div class="work-foot"><span class="work-role">PO</span></div>
+          </article>
+          <article class="work" data-tags="med plan soldoc">
+            <p class="work-meta">솔닥 · 2022–2024</p>
+            <h3>솔닥 베이직 런칭 · 운영</h3>
+            <p class="work-desc">비대면 진료를 대면 진료로 연결하는 신규 서비스 기획</p>
+            <p class="work-result">신규 서비스 런칭</p>
+            <div class="work-foot"><span class="work-role">기획 · 운영</span></div>
+          </article>
+          <article class="work" data-tags="med app plan soldoc">
+            <p class="work-meta">솔닥 · 2022–2024</p>
+            <h3>비대면 진료 지침 반영</h3>
+            <p class="work-desc">계속 바뀌는 비대면 진료 지침을 서비스에 맞춰 반영</p>
+            <p class="work-result">사용자 불편 최소화</p>
+            <div class="work-foot"><span class="work-role">PO</span></div>
+          </article>
+          <article class="work" data-tags="med web soldoc">
+            <p class="work-meta">솔닥 · 2022–2024</p>
+            <h3>정책 페이지 퍼블리싱</h3>
+            <p class="work-desc">외부 몰에만 있던 정책 페이지를 서비스 안에서 볼 수 있게 퍼블리싱</p>
+            <p class="work-result">정책 접근성 개선</p>
+            <div class="work-foot"><span class="work-role">검토 · 퍼블리싱</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 경력 -->
+    <section class="section section-alt" id="career">
+      <div class="container">
+        <p class="kicker reveal">Career</p>
+        <h2 class="section-title reveal">경력</h2>
+        <div class="section-head-row reveal">
+          <p class="section-desc">웹 개발 · 서비스 기획 6년+ &nbsp;·&nbsp; 정보처리기능사</p>
+          <button class="btn btn-ghost btn-sm print-btn" type="button">경력기술서 PDF로 저장</button>
+        </div>
+        <ol class="timeline">
+          <li class="reveal is-current">
+            <p class="tl-date">2026.04 – 현재</p>
+            <div class="tl-body">
+              <h3>한의원 체인 본사 <span class="tl-badge">재직 중</span></h3>
+              <p class="tl-role">웹 개발</p>
+              <!-- TODO: 현재 맡은 일을 회사 내부 정보 없이 한 줄로 -->
+              <p>체인 본사의 웹 서비스 개발과 운영</p>
+            </div>
+          </li>
+          <li class="reveal">
+            <p class="tl-date">2024.08 – 2025.12</p>
+            <div class="tl-body">
+              <h3>법무법인</h3>
+              <p class="tl-role">웹 개발 · 기획실 과장</p>
+              <p>외주 개발을 인하우스로 전환하고, 홈페이지·랜딩페이지·사건 관리 어드민을 개발하고 운영</p>
+              <a class="tl-link" href="#works" data-filter="firm">프로젝트 <span data-count="firm"></span>건 보기 →</a>
+            </div>
+          </li>
+          <li class="reveal">
+            <p class="tl-date">2022.10 – 2024.04</p>
+            <div class="tl-body">
+              <h3>솔닥 <span class="tl-sub">비대면 진료 서비스</span></h3>
+              <p class="tl-role">PO</p>
+              <p>카카오톡 기반 서비스의 앱 전환 기획, 의사·약사 CS를 반영한 어드민 개선, 신규 서비스 런칭과 운영</p>
+              <a class="tl-link" href="#works" data-filter="soldoc">프로젝트 <span data-count="soldoc"></span>건 보기 →</a>
+            </div>
+          </li>
+          <li class="reveal">
+            <p class="tl-date">2020.02 – 2022.08</p>
+            <div class="tl-body">
+              <h3>로앤컴퍼니 <span class="tl-sub">법률 플랫폼 로톡</span></h3>
+              <p class="tl-role">웹 개발</p>
+              <p>비회원 유료상담, 양방향 후기 평가, 변호사 쿠폰, 형량예측 서비스 등 기능 개발</p>
+              <a class="tl-link" href="#works" data-filter="lawtalk">프로젝트 <span data-count="lawtalk"></span>건 보기 →</a>
+            </div>
+          </li>
+          <li class="reveal">
+            <p class="tl-date">2018.11 – 2019.05</p>
+            <div class="tl-body">
+              <h3>노예스런 외 1곳 <span class="tl-sub">IT 서비스 기업</span></h3>
+              <p class="tl-role">서비스 기획</p>
+              <p>알람몬 등 앱 서비스 운영, 콘텐츠 런칭, QA, CS 챗봇 도입</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 일하는 방식 (유지보수 · 작업 형태 · FAQ) -->
+    <section class="section" id="process">
+      <div class="container">
+        <p class="kicker reveal">Process</p>
+        <h2 class="section-title reveal">일하는 방식</h2>
+        <p class="section-desc reveal">의사·약사가 매일 쓰는 의료 서비스 어드민에서 현장 요청을 받아 빠르게 반영해 온 방식 그대로 일합니다.</p>
+        <ol class="steps">
+          <li class="reveal">
+            <h3>요청 접수</h3>
+            <!-- TODO: 현재 근무시간을 고려해 회신 시간 확정 -->
+            <p>이메일로 요청을 받고, 평일 기준 24시간 이내에 1차 회신을 드립니다. 요청마다 작업 기록을 남깁니다.</p>
+          </li>
+          <li class="reveal">
+            <h3>범위 확인</h3>
+            <p>수정 범위와 예상 일정을 먼저 정리해 공유하고, 확인을 받은 뒤 작업합니다.</p>
+          </li>
+          <li class="reveal">
+            <h3>작업 · 결과 공유</h3>
+            <p>작업 후 변경 전·후 화면과 함께 결과를 공유합니다.</p>
+          </li>
+          <li class="reveal">
+            <h3>기록 보관</h3>
+            <p>무엇을 왜 바꿨는지 문서로 남겨, 같은 문제가 반복되지 않게 합니다.</p>
+          </li>
+        </ol>
+        <ul class="promises reveal">
+          <li><strong>변경 전 백업</strong>수정 전에 반드시 백업합니다.</li>
+          <li><strong>변경 이력 관리</strong>모든 수정은 Git으로 기록해 언제든 되돌릴 수 있습니다.</li>
+          <li><strong>장애 보고</strong>문제가 생기면 원인과 조치 내용을 정리해 보고합니다.</li>
+        </ul>
+
+        <h3 class="sub-title reveal" id="plans">작업 형태</h3>
         <!-- TODO: 가격 정책이 정해지면 '견적 문의'를 금액으로 교체 -->
-        <p class="section-desc reveal">작업 범위를 먼저 확인한 뒤 견적을 드립니다.</p>
+        <p class="sub-desc reveal">작업 범위를 먼저 확인한 뒤 견적을 드립니다.</p>
         <div class="grid grid-3 plans">
           <article class="card plan reveal">
             <h3>건별 수정</h3>
@@ -273,99 +517,8 @@
             </ul>
           </article>
         </div>
-      </div>
-    </section>
 
-    <!-- 경력 -->
-    <section class="section section-alt" id="career">
-      <div class="container">
-        <p class="kicker reveal">Career</p>
-        <h2 class="section-title reveal">경력</h2>
-        <p class="section-desc reveal">웹 개발 · 서비스 기획 6년+ &nbsp;·&nbsp; 정보처리기능사</p>
-        <ol class="timeline">
-          <li class="reveal is-current">
-            <p class="tl-date">2026.04 – 현재</p>
-            <div class="tl-body">
-              <h3>한의원 체인 본사 <span class="tl-badge">재직 중</span></h3>
-              <p class="tl-role">웹 개발</p>
-              <!-- TODO: 현재 맡은 일을 회사 내부 정보 없이 한 줄로 -->
-              <p>체인 본사의 웹 서비스 개발과 운영</p>
-            </div>
-          </li>
-          <li class="reveal">
-            <p class="tl-date">2024.08 – 2025.12</p>
-            <div class="tl-body">
-              <h3>법무법인</h3>
-              <p class="tl-role">웹 개발 · 기획실 과장</p>
-              <p>외주 개발을 인하우스로 전환하고, 홈페이지·랜딩페이지·사건 관리 어드민을 개발하고 운영</p>
-            </div>
-          </li>
-          <li class="reveal">
-            <p class="tl-date">2022.10 – 2024.04</p>
-            <div class="tl-body">
-              <h3>솔닥 <span class="tl-sub">비대면 진료 서비스</span></h3>
-              <p class="tl-role">PO</p>
-              <p>카카오톡 기반 서비스의 앱 전환 기획, 의사·약사 CS를 반영한 어드민 개선, 신규 서비스 런칭과 운영</p>
-            </div>
-          </li>
-          <li class="reveal">
-            <p class="tl-date">2020.02 – 2022.08</p>
-            <div class="tl-body">
-              <h3>로앤컴퍼니 <span class="tl-sub">법률 플랫폼 로톡</span></h3>
-              <p class="tl-role">웹 개발</p>
-              <p>비회원 유료상담, 양방향 후기 평가, 변호사 쿠폰, 형량예측 서비스 등 기능 개발</p>
-            </div>
-          </li>
-          <li class="reveal">
-            <p class="tl-date">2018.11 – 2019.05</p>
-            <div class="tl-body">
-              <h3>노예스런 외 1곳 <span class="tl-sub">IT 서비스 기업</span></h3>
-              <p class="tl-role">서비스 기획</p>
-              <p>알람몬 등 앱 서비스 운영, 콘텐츠 런칭, QA, CS 챗봇 도입</p>
-            </div>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- 유지보수 방식 -->
-    <section class="section" id="maintenance">
-      <div class="container">
-        <p class="kicker reveal">Process</p>
-        <h2 class="section-title reveal">유지보수는 이렇게 진행합니다</h2>
-        <p class="section-desc reveal">의사·약사가 매일 쓰는 의료 서비스 어드민에서 현장 요청을 받아 빠르게 반영해 온 방식 그대로 일합니다.</p>
-        <ol class="steps">
-          <li class="reveal">
-            <h3>요청 접수</h3>
-            <!-- TODO: 현재 근무시간을 고려해 회신 시간 확정 -->
-            <p>이메일로 요청을 받고, 평일 기준 24시간 이내에 1차 회신을 드립니다. 요청마다 작업 기록을 남깁니다.</p>
-          </li>
-          <li class="reveal">
-            <h3>범위 확인</h3>
-            <p>수정 범위와 예상 일정을 먼저 정리해 공유하고, 확인을 받은 뒤 작업합니다.</p>
-          </li>
-          <li class="reveal">
-            <h3>작업 · 결과 공유</h3>
-            <p>작업 후 변경 전·후 화면과 함께 결과를 공유합니다.</p>
-          </li>
-          <li class="reveal">
-            <h3>기록 보관</h3>
-            <p>무엇을 왜 바꿨는지 문서로 남겨, 같은 문제가 반복되지 않게 합니다.</p>
-          </li>
-        </ol>
-        <ul class="promises reveal">
-          <li><strong>변경 전 백업</strong>수정 전에 반드시 백업합니다.</li>
-          <li><strong>변경 이력 관리</strong>모든 수정은 Git으로 기록해 언제든 되돌릴 수 있습니다.</li>
-          <li><strong>장애 보고</strong>문제가 생기면 원인과 조치 내용을 정리해 보고합니다.</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="section section-alt" id="faq">
-      <div class="container narrow">
-        <p class="kicker reveal">FAQ</p>
-        <h2 class="section-title reveal">자주 묻는 질문</h2>
+        <h3 class="sub-title reveal" id="faq">자주 묻는 질문</h3>
         <div class="faq">
           <details class="reveal">
             <summary>회사에 다니면서 하시는데, 연락이 늦지 않나요?</summary>
