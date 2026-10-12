@@ -28,6 +28,8 @@
     </symbol>
   </svg>
 
+  <div class="progress" aria-hidden="true"></div>
+
   <header class="site-header">
     <div class="container header-inner">
       <a class="logo" href="#top"><svg class="logo-icon" aria-hidden="true"><use href="#cherry"/></svg>오서연</a>
@@ -35,49 +37,92 @@
         <span></span><span></span><span></span>
       </button>
       <nav id="site-nav" class="site-nav">
-        <a href="#strengths">강점</a>
-        <a href="#services">서비스</a>
         <a href="#projects">사례</a>
+        <a href="#plans">작업 형태</a>
         <a href="#career">경력</a>
-        <a href="#maintenance">유지보수</a>
+        <a href="#faq">FAQ</a>
         <a class="nav-cta" href="#contact">문의하기</a>
       </nav>
     </div>
   </header>
 
   <main id="top">
-    <!-- 히어로 -->
+    <!-- 히어로 (벤토 그리드) -->
     <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <p class="eyebrow">Web Developer · 법률 서비스 웹 개발 · 운영</p>
-          <h1>상담으로 이어지는 홈페이지,<br><em>오픈 이후까지</em> 책임집니다</h1>
+      <div class="container bento">
+        <div class="tile tile-intro">
+          <!-- TODO: 작업 가능 시간 확정 -->
+          <p class="status"><span class="dot"></span>외주 · 유지보수 문의 받는 중</p>
+          <h1>상담으로 이어지는<br>홈페이지를 만들고,<br><em>오픈 이후까지</em> 책임집니다</h1>
           <p class="hero-lead">
             안녕하세요, 웹 개발자 <strong>오서연</strong>입니다.
             법무법인과 법률 플랫폼에서 홈페이지, 랜딩페이지, 사건 관리 어드민을 직접 개발하고 운영해 왔습니다.
-            데이터와 사용자 의견을 보고, 실제 상담 유입이 늘어나는 방향으로 고칩니다.
           </p>
-          <!-- TODO: 현재 회사 경력을 포함한 총 연차가 확정되면 숫자 수정 -->
-          <ul class="hero-facts">
-            <li><strong>6년+</strong><span>웹 개발 · 서비스 기획</span></li>
-            <li><strong>4년</strong><span>법률 서비스 웹 개발</span></li>
-            <li><strong>약 10%</strong><span>랜딩페이지 상담 유입 상승</span></li>
-          </ul>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#contact">유지보수 문의하기</a>
             <a class="btn btn-ghost" href="#projects">작업 사례 보기</a>
           </div>
         </div>
-        <figure class="hero-visual" aria-hidden="true">
-          <svg class="hero-cherry"><use href="#cherry"/></svg>
-          <figcaption><b>ㅇ</b><i>ㅅ</i><b>ㅇ</b> 을 이으면, 체리</figcaption>
-        </figure>
+
+        <button class="tile tile-cherry" type="button" aria-label="체리 흔들기">
+          <svg class="hero-cherry" aria-hidden="true"><use href="#cherry"/></svg>
+          <span class="cherry-caption"><b>ㅇ</b><i>ㅅ</i><b>ㅇ</b> 을 이으면, 체리</span>
+        </button>
+
+        <!-- TODO: 현재 회사 경력을 포함한 총 연차가 확정되면 숫자 수정 -->
+        <div class="tile tile-stat">
+          <strong><span class="count" data-to="6">6</span>년+</strong>
+          <span>웹 개발 · 서비스 기획</span>
+        </div>
+        <div class="tile tile-stat">
+          <strong><span class="count" data-to="4">4</span>년</strong>
+          <span>법률 서비스 웹 개발</span>
+        </div>
+        <div class="tile tile-stat tile-stat-accent">
+          <strong>+<span class="count" data-to="20">20</span>건</strong>
+          <span>주 평균 상담 유입 증가</span>
+        </div>
+        <div class="tile tile-stat">
+          <strong>약 <span class="count" data-to="10">10</span>%</strong>
+          <span>랜딩페이지 상담 유입률 상승</span>
+        </div>
+
+        <div class="tile tile-rotate">
+          <p class="tile-label">이런 일을 맡아요</p>
+          <p class="rotator" aria-live="polite">
+            <span class="is-active">홈페이지 유지보수</span>
+            <span>분야별 랜딩페이지 제작</span>
+            <span>상담 신청 흐름 개선</span>
+            <span>노후 PHP 사이트 전환</span>
+          </p>
+        </div>
+
+        <!-- TODO: 주력/사용 가능 구분이 맞는지 확인 -->
+        <div class="tile tile-stack">
+          <p class="tile-label">주력 기술</p>
+          <ul class="tags tags-strong">
+            <li>JavaScript</li><li>React</li><li>HTML/CSS</li><li>Tailwind CSS</li><li>MySQL</li><li>Git</li>
+          </ul>
+          <p class="tile-label tile-label-sub">사용 가능</p>
+          <ul class="tags">
+            <li>PHP</li><li>그누보드</li><li>Angular</li><li>MongoDB</li><li>Android 유지보수</li>
+          </ul>
+        </div>
       </div>
     </section>
+
+    <!-- 키워드 띠 -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>홈페이지 유지보수</span><span>랜딩페이지</span><span>상담 유입 개선</span><span>React</span><span>레거시 전환</span><span>어드민 개발</span><span>법률 서비스</span><span>운영까지 책임</span>
+        <span>홈페이지 유지보수</span><span>랜딩페이지</span><span>상담 유입 개선</span><span>React</span><span>레거시 전환</span><span>어드민 개발</span><span>법률 서비스</span><span>운영까지 책임</span>
+      </div>
+    </div>
 
     <!-- 강점 3가지 -->
     <section class="section" id="strengths">
       <div class="container">
+        <p class="kicker reveal">Why me</p>
         <h2 class="section-title reveal">함께 일하면 좋은 점</h2>
         <div class="grid grid-3">
           <article class="card reveal">
@@ -99,96 +144,142 @@
       </div>
     </section>
 
-    <!-- 제공 서비스 -->
-    <section class="section section-alt" id="services">
-      <div class="container">
-        <h2 class="section-title reveal">제공 서비스</h2>
-        <div class="grid grid-2">
-          <article class="card service reveal">
-            <h3>홈페이지 유지보수</h3>
-            <p>오류 수정, 콘텐츠·구성원 정보 변경, 신규 페이지 추가를 요청 단위로 처리합니다.</p>
-          </article>
-          <article class="card service reveal">
-            <h3>분야별 랜딩페이지 제작</h3>
-            <p>이혼, 형사, 기업 법무 등 업무 분야별로 광고 유입에 맞춘 랜딩페이지를 만듭니다.</p>
-          </article>
-          <article class="card service reveal">
-            <h3>상담 신청 흐름 개선</h3>
-            <p>상담 버튼, 전화 연결, 신청 폼이 끝까지 제대로 작동하는지 점검하고 이탈 지점을 고칩니다.</p>
-          </article>
-          <article class="card service reveal">
-            <h3>노후 사이트 전환</h3>
-            <p>오래된 PHP·그누보드 사이트를 관리하기 쉬운 구조로 옮기고, 모바일 화면을 정리합니다.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- 기술 스택 -->
-    <section class="section" id="stack">
-      <div class="container">
-        <h2 class="section-title reveal">기술 스택</h2>
-        <!-- TODO: 주력/사용 가능 구분이 맞는지 확인 -->
-        <div class="stack stack-2 reveal">
-          <div class="stack-group">
-            <h3>주력</h3>
-            <ul class="tags tags-strong">
-              <li>JavaScript</li><li>React</li><li>HTML/CSS</li><li>Tailwind CSS</li><li>MySQL · SQL</li><li>Git</li>
-            </ul>
-          </div>
-          <div class="stack-group">
-            <h3>사용 가능</h3>
-            <ul class="tags">
-              <li>PHP</li><li>그누보드</li><li>Angular</li><li>MongoDB</li><li>Android 앱 유지보수</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- 프로젝트 사례 -->
     <section class="section section-alt" id="projects">
       <div class="container">
+        <p class="kicker reveal">Case study</p>
         <h2 class="section-title reveal">프로젝트 사례</h2>
-        <p class="section-desc reveal">고객사 보호를 위해 기관명, 실제 화면, 내부 데이터는 공개하지 않습니다.</p>
-        <div class="grid grid-3">
-          <article class="card project reveal">
+        <p class="section-desc reveal">고객사 보호를 위해 실제 화면과 내부 데이터 대신 구조를 그림으로 보여드립니다.</p>
+
+        <article class="case reveal">
+          <div class="case-visual" aria-hidden="true">
+            <div class="mock-browser">
+              <div class="mock-bar"><i></i><i></i><i></i></div>
+              <div class="mock-body">
+                <div class="mock-line w60"></div>
+                <div class="mock-line w40"></div>
+                <div class="mock-cta">상담 신청하기</div>
+                <div class="mock-chart">
+                  <div class="bar" style="--h:38%"><span>개선 전</span></div>
+                  <div class="bar bar-up" style="--h:88%"><span>개선 후</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="case-text">
             <p class="project-type">법무법인 · 홈페이지 / 랜딩페이지</p>
             <h3>홈페이지 유지보수와 랜딩페이지로 상담 유입 개선</h3>
+            <p class="case-metric"><strong>주 +20건</strong> 상담 유입 증가</p>
             <dl>
-              <dt>상황</dt><dd>대표 홈페이지의 상담 연결 기능에 오류가 있었고, 광고 유입을 받을 분야별 페이지가 없었습니다.</dd>
+              <dt>문제</dt><dd>대표 홈페이지의 상담 연결 기능에 오류가 있었고, 광고 유입을 받을 분야별 페이지가 없었습니다.</dd>
               <dt>한 일</dt><dd>상담 연결 오류 수정, 신규 페이지 개발, 업무 분야별 마케팅 랜딩페이지 개발과 운영</dd>
-              <dt>기술</dt><dd>JavaScript, HTML/CSS, PHP, MySQL</dd>
               <dt>결과</dt><dd>상담 유입 주 평균 약 20건 증가, 랜딩페이지 상담 유입률 기존 홈페이지 대비 약 10% 상승</dd>
             </dl>
-          </article>
-          <article class="card project reveal">
+            <ul class="tags tags-sm"><li>JavaScript</li><li>HTML/CSS</li><li>PHP</li><li>MySQL</li></ul>
+          </div>
+        </article>
+
+        <article class="case case-reverse reveal">
+          <div class="case-visual" aria-hidden="true">
+            <div class="migrate">
+              <div class="migrate-box migrate-old">
+                <small>Before</small>
+                <b>PHP 5 · 그누보드</b>
+                <span>외주 관리 · 데이터 분산</span>
+              </div>
+              <div class="migrate-arrow"><svg viewBox="0 0 120 120"><use href="#cherry"/></svg></div>
+              <div class="migrate-box migrate-new">
+                <small>After</small>
+                <b>React · Tailwind CSS</b>
+                <span>인하우스 운영 · 데이터 통합</span>
+              </div>
+            </div>
+          </div>
+          <div class="case-text">
             <p class="project-type">법무법인 · 시스템 전환</p>
             <h3>PHP 5 · 그누보드 서비스를 React로 재구축</h3>
+            <p class="case-metric"><strong>외주 → 인하우스</strong> 개발 체제 전환</p>
             <dl>
-              <dt>상황</dt><dd>외주로 만든 PHP 5·그누보드 기반 서비스가 사내 데이터 형식과 맞지 않게 운영되고 있었습니다.</dd>
+              <dt>문제</dt><dd>외주로 만든 PHP 5·그누보드 기반 서비스가 사내 데이터 형식과 맞지 않게 운영되고 있었습니다.</dd>
               <dt>한 일</dt><dd>외주 개발을 인하우스로 전환하고, 어드민 서버의 데이터 구조에 맞춰 서비스를 다시 작성</dd>
-              <dt>기술</dt><dd>React, Tailwind CSS</dd>
               <dt>결과</dt><dd>수기·분산 관리되던 사건 데이터를 하나의 형식으로 통합해 관리</dd>
             </dl>
-          </article>
-          <article class="card project reveal">
+            <ul class="tags tags-sm"><li>React</li><li>Tailwind CSS</li></ul>
+          </div>
+        </article>
+
+        <article class="case reveal">
+          <div class="case-visual" aria-hidden="true">
+            <ol class="flow">
+              <li>상담 신청</li>
+              <li class="flow-skip">회원가입 필수</li>
+              <li class="flow-new">비회원으로 바로 상담</li>
+              <li>상담 연결</li>
+            </ol>
+          </div>
+          <div class="case-text">
             <p class="project-type">법률 플랫폼 · 기능 개발</p>
             <h3>비회원 유료상담 기능 개발</h3>
+            <p class="case-metric"><strong>+10% 이상</strong> 상담 추가 연결</p>
             <dl>
-              <dt>상황</dt><dd>회원가입을 해야만 상담할 수 있어, 개인정보가 부담스러운 사용자가 상담 전에 이탈했습니다.</dd>
+              <dt>문제</dt><dd>회원가입을 해야만 상담할 수 있어, 개인정보가 부담스러운 사용자가 상담 전에 이탈했습니다.</dd>
               <dt>한 일</dt><dd>비회원 상담 프로세스의 프론트엔드 개발, 백엔드 개발자와 협업해 흐름 설계</dd>
-              <dt>기술</dt><dd>JavaScript, React</dd>
               <dt>결과</dt><dd>기존 문의 대비 10% 이상 상담을 추가로 연결</dd>
             </dl>
+            <ul class="tags tags-sm"><li>JavaScript</li><li>React</li></ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 작업 형태 -->
+    <section class="section" id="plans">
+      <div class="container">
+        <p class="kicker reveal">Plans</p>
+        <h2 class="section-title reveal">작업 형태</h2>
+        <!-- TODO: 가격 정책이 정해지면 '견적 문의'를 금액으로 교체 -->
+        <p class="section-desc reveal">작업 범위를 먼저 확인한 뒤 견적을 드립니다.</p>
+        <div class="grid grid-3 plans">
+          <article class="card plan reveal">
+            <h3>건별 수정</h3>
+            <p class="plan-price">견적 문의</p>
+            <p>필요할 때 한 건씩 맡기는 방식</p>
+            <ul class="checks">
+              <li>오류 수정, 문구·이미지 교체</li>
+              <li>구성원·업무 분야 정보 변경</li>
+              <li>작업 전·후 화면 공유</li>
+            </ul>
+          </article>
+          <article class="card plan plan-featured reveal">
+            <span class="plan-badge">추천</span>
+            <h3>월 유지보수</h3>
+            <p class="plan-price">견적 문의</p>
+            <p>홈페이지를 꾸준히 맡기는 방식</p>
+            <ul class="checks">
+              <li>월 단위 수정 요청 처리</li>
+              <li>상담 버튼·신청 폼 정기 점검</li>
+              <li>보안 업데이트와 백업 확인</li>
+              <li>평일 24시간 이내 1차 회신</li>
+            </ul>
+          </article>
+          <article class="card plan reveal">
+            <h3>신규 제작 · 전환</h3>
+            <p class="plan-price">견적 문의</p>
+            <p>새로 만들거나 크게 바꾸는 방식</p>
+            <ul class="checks">
+              <li>업무 분야별 랜딩페이지</li>
+              <li>상담 신청 흐름 개선</li>
+              <li>노후 PHP·그누보드 사이트 전환</li>
+            </ul>
           </article>
         </div>
       </div>
     </section>
 
     <!-- 경력 -->
-    <section class="section" id="career">
+    <section class="section section-alt" id="career">
       <div class="container">
+        <p class="kicker reveal">Career</p>
         <h2 class="section-title reveal">경력</h2>
         <p class="section-desc reveal">웹 개발 · 서비스 기획 6년+ &nbsp;·&nbsp; 정보처리기능사</p>
         <ol class="timeline">
@@ -238,8 +329,9 @@
     </section>
 
     <!-- 유지보수 방식 -->
-    <section class="section section-alt" id="maintenance">
+    <section class="section" id="maintenance">
       <div class="container">
+        <p class="kicker reveal">Process</p>
         <h2 class="section-title reveal">유지보수는 이렇게 진행합니다</h2>
         <p class="section-desc reveal">의사·약사가 매일 쓰는 의료 서비스 어드민에서 현장 요청을 받아 빠르게 반영해 온 방식 그대로 일합니다.</p>
         <ol class="steps">
@@ -269,22 +361,48 @@
       </div>
     </section>
 
+    <!-- FAQ -->
+    <section class="section section-alt" id="faq">
+      <div class="container narrow">
+        <p class="kicker reveal">FAQ</p>
+        <h2 class="section-title reveal">자주 묻는 질문</h2>
+        <div class="faq">
+          <details class="reveal">
+            <summary>회사에 다니면서 하시는데, 연락이 늦지 않나요?</summary>
+            <p>평일 기준 24시간 이내에 1차 회신을 드립니다. 급한 장애 대응 기준은 계약할 때 함께 정합니다.</p>
+          </details>
+          <details class="reveal">
+            <summary>기존 사이트가 PHP·그누보드로 되어 있어도 맡길 수 있나요?</summary>
+            <p>네. PHP 5·그누보드 기반 서비스를 직접 유지보수하고 React로 전환한 경험이 있습니다. 지금 구조 그대로 유지보수하는 것도, 단계적으로 옮기는 것도 가능합니다.</p>
+          </details>
+          <details class="reveal">
+            <summary>비용은 어떻게 정해지나요?</summary>
+            <p>요청하신 내용을 확인하고 작업 범위와 예상 시간을 먼저 정리해 드린 뒤 견적을 드립니다. 확인 전에는 작업을 시작하지 않습니다.</p>
+          </details>
+          <details class="reveal">
+            <summary>소스 코드와 계정은 누구 소유인가요?</summary>
+            <p>모두 의뢰하신 쪽 소유입니다. 작업 내역은 Git으로 기록하고, 계약이 끝나면 정리해서 넘겨 드립니다.</p>
+          </details>
+          <details class="reveal">
+            <summary>의뢰인 정보 같은 민감한 데이터는 어떻게 다루나요?</summary>
+            <p>필요하면 비밀유지 계약을 맺고 진행합니다. 작업에 필요한 범위만 접근하고, 고객 데이터를 외부로 옮기지 않습니다.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
     <!-- 연락처 -->
     <section class="section contact" id="contact">
-      <div class="container">
-        <h2 class="section-title reveal">문의하기</h2>
-        <p class="section-desc reveal">간단한 수정 한 건부터 월 단위 유지보수까지, 편하게 연락 주세요.</p>
+      <div class="container contact-inner">
+        <svg class="contact-cherry" aria-hidden="true"><use href="#cherry"/></svg>
+        <h2 class="contact-title reveal">수정 한 건부터<br>편하게 맡겨 주세요</h2>
+        <p class="contact-desc reveal">간단한 수정 한 건부터 월 단위 유지보수까지, 메일 한 통이면 됩니다.</p>
         <!-- TODO: 오픈채팅을 만들면 링크 추가 -->
-        <div class="contact-links reveal">
-          <a class="contact-item" href="mailto:seoyeom542@gmail.com">
-            <span class="contact-label">Email</span>
-            <span class="contact-value">seoyeom542@gmail.com</span>
-          </a>
-          <a class="contact-item" href="https://github.com/seoyeom542" target="_blank" rel="noopener">
-            <span class="contact-label">GitHub</span>
-            <span class="contact-value">github.com/seoyeom542</span>
-          </a>
+        <div class="contact-actions reveal">
+          <a class="btn btn-light" href="mailto:seoyeom542@gmail.com">seoyeom542@gmail.com</a>
+          <button class="btn btn-outline-light copy-btn" type="button" data-copy="seoyeom542@gmail.com">주소 복사</button>
         </div>
+        <a class="contact-sub reveal" href="https://github.com/seoyeom542" target="_blank" rel="noopener">GitHub · github.com/seoyeom542 ↗</a>
       </div>
     </section>
   </main>
