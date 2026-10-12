@@ -116,6 +116,17 @@ a { color: inherit; text-decoration: none; }
   font-size: 1.1rem;
   color: rgba(255, 255, 255, 0.82);
 }
+.hero-facts {
+  list-style: none;
+  padding: 0;
+  margin: 36px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 40px;
+}
+.hero-facts li { display: flex; flex-direction: column; }
+.hero-facts strong { font-size: 1.6rem; font-weight: 800; color: #fff; }
+.hero-facts span { font-size: 0.88rem; color: rgba(255, 255, 255, 0.7); }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 40px; }
 
 .btn {
@@ -158,6 +169,7 @@ a { color: inherit; text-decoration: none; }
 
 /* ---------- 기술 스택 ---------- */
 .stack { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+.stack-2 { grid-template-columns: repeat(2, 1fr); }
 .stack-group h3 { font-size: 0.95rem; color: var(--text-muted); font-weight: 600; margin-bottom: 14px; }
 .tags { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
 .tags li {
@@ -170,19 +182,21 @@ a { color: inherit; text-decoration: none; }
   font-weight: 500;
 }
 
+.tags-strong li { background: var(--navy-900); border-color: var(--navy-900); color: #fff; }
+
 /* ---------- 프로젝트 ---------- */
 .project { display: flex; flex-direction: column; }
 .project-type { font-size: 0.8rem; font-weight: 700; color: var(--accent) !important; margin-bottom: 8px; }
 .project dl {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 6px 14px;
+  gap: 10px 14px;
   margin: 24px 0 0;
   padding-top: 20px;
   border-top: 1px solid var(--line);
   font-size: 0.92rem;
 }
-.project dt { font-weight: 700; color: var(--navy-900); }
+.project dt { font-weight: 700; color: var(--navy-900); white-space: nowrap; }
 .project dd { margin: 0; color: var(--text-muted); }
 
 /* ---------- 유지보수 단계 ---------- */
@@ -213,11 +227,24 @@ a { color: inherit; text-decoration: none; }
 .steps h3 { font-size: 1.1rem; color: var(--navy-900); margin-bottom: 8px; }
 .steps p { color: var(--text-muted); font-size: 0.95rem; }
 
+.promises {
+  list-style: none;
+  padding: 24px 28px;
+  margin: 48px 0 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px 28px;
+  background: var(--bg-alt);
+  border-radius: var(--radius);
+}
+.promises li { color: var(--text-muted); font-size: 0.95rem; }
+.promises strong { display: block; color: var(--navy-900); margin-bottom: 2px; }
+
 /* ---------- 연락처 ---------- */
 .contact { background: var(--navy-900); color: #fff; }
 .contact .section-title { color: #fff; }
 .contact .section-desc { color: rgba(255, 255, 255, 0.75); }
-.contact-links { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.contact-links { display: grid; grid-template-columns: repeat(2, 1fr); max-width: 720px; gap: 16px; }
 .contact-item {
   display: flex;
   flex-direction: column;
@@ -249,7 +276,7 @@ a { color: inherit; text-decoration: none; }
 @media (max-width: 900px) {
   .grid-3, .stack { grid-template-columns: 1fr 1fr; }
   .steps { grid-template-columns: 1fr 1fr; row-gap: 40px; }
-  .contact-links { grid-template-columns: 1fr; }
+  .contact-links, .promises { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 720px) {
