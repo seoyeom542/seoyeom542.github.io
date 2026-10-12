@@ -9,30 +9,18 @@
   <meta property="og:title" content="오서연 | 법률 서비스 웹 개발 · 유지보수">
   <meta property="og:description" content="상담으로 이어지는 홈페이지를 만들고, 오픈 이후까지 책임지고 관리합니다.">
   <meta property="og:url" content="https://seoyeom542.github.io/">
-  <meta name="theme-color" content="#d7263d">
+  <meta name="theme-color" content="#0e0f11">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'><path d='M60 16C72 4 92 6 99 15C88 25 70 25 60 16Z' fill='%236aa84f'/><path d='M60 16C53 34 42 52 37 68M52 36C66 46 78 58 83 70' fill='none' stroke='%234a7c3f' stroke-width='6' stroke-linecap='round'/><circle cx='36' cy='86' r='22' fill='%23d7263d'/><circle cx='84' cy='88' r='22' fill='%23d7263d'/></svg>">
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- 시그니처 체리 아이콘: ㅇㅅㅇ (동그라미 두 개를 ㅅ 꼭지로 이은 모양) -->
-  <svg class="sprite" aria-hidden="true" focusable="false">
-    <symbol id="cherry" viewBox="0 0 120 120">
-      <path class="cherry-leaf" d="M60 16C72 4 92 6 99 15C88 25 70 25 60 16Z"/>
-      <path class="cherry-stem" d="M60 16C53 34 42 52 37 68M52 36C66 46 78 58 83 70"/>
-      <circle class="cherry-fruit" cx="36" cy="86" r="22"/>
-      <circle class="cherry-fruit" cx="84" cy="88" r="22"/>
-      <ellipse class="cherry-shine" cx="27" cy="78" rx="6" ry="4" transform="rotate(-35 27 78)"/>
-      <ellipse class="cherry-shine" cx="75" cy="80" rx="6" ry="4" transform="rotate(-35 75 80)"/>
-    </symbol>
-  </svg>
-
   <div class="progress" aria-hidden="true"></div>
 
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="#top"><svg class="logo-icon" aria-hidden="true"><use href="#cherry"/></svg>오서연</a>
+      <a class="logo" href="#top"><span class="logo-mark" aria-hidden="true">OS</span>오서연</a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="메뉴 열기">
         <span></span><span></span><span></span>
       </button>
@@ -65,10 +53,15 @@
           </div>
         </div>
 
-        <button class="tile tile-cherry" type="button" aria-label="체리 흔들기">
-          <svg class="hero-cherry" aria-hidden="true"><use href="#cherry"/></svg>
-          <span class="cherry-caption"><b>ㅇ</b><i>ㅅ</i><b>ㅇ</b> 을 이으면, 체리</span>
-        </button>
+        <div class="tile tile-local">
+          <p class="tile-label">Based in</p>
+          <div>
+            <p class="local-city">Seoul, KR</p>
+            <p class="local-time"><span id="clock">--:--</span><small>KST</small></p>
+          </div>
+          <!-- TODO: 작업 가능 시간 확정 -->
+          <p class="local-note">원격으로 진행 · 평일 24시간 이내 회신</p>
+        </div>
 
         <!-- TODO: 현재 회사 경력을 포함한 총 연차가 확정되면 숫자 수정 -->
         <div class="tile tile-stat">
@@ -180,7 +173,7 @@
                 <b>PHP 5 · 그누보드</b>
                 <span>외주 관리 · 데이터 분산</span>
               </div>
-              <div class="migrate-arrow"><svg viewBox="0 0 120 120"><use href="#cherry"/></svg></div>
+              <div class="migrate-arrow" aria-hidden="true">→</div>
               <div class="migrate-box migrate-new">
                 <small>After</small>
                 <b>React · Tailwind CSS</b>
@@ -547,7 +540,6 @@
     <!-- 연락처 -->
     <section class="section contact" id="contact">
       <div class="container contact-inner">
-        <svg class="contact-cherry" aria-hidden="true"><use href="#cherry"/></svg>
         <h2 class="contact-title reveal">수정 한 건부터<br>편하게 맡겨 주세요</h2>
         <p class="contact-desc reveal">간단한 수정 한 건부터 월 단위 유지보수까지, 메일 한 통이면 됩니다.</p>
         <!-- TODO: 오픈채팅을 만들면 링크 추가 -->
@@ -562,8 +554,10 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p class="signature"><b>ㅇ</b><i>ㅅ</i><b>ㅇ</b></p>
-      <p>&copy; <span id="year">2026</span> 오서연</p>
+      <div class="footer-inner">
+        <p>&copy; <span id="year">2026</span> 오서연 · Seoul</p>
+        <a href="#top">맨 위로 ↑</a>
+      </div>
     </div>
   </footer>
 
