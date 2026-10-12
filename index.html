@@ -9,16 +9,28 @@
   <meta property="og:title" content="오서연 | 법률 서비스 웹 개발 · 유지보수">
   <meta property="og:description" content="상담으로 이어지는 홈페이지를 만들고, 오픈 이후까지 책임지고 관리합니다.">
   <meta property="og:url" content="https://seoyeom542.github.io/">
-  <meta name="theme-color" content="#0f2341">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230f2341'/><text x='16' y='22' font-size='16' font-family='sans-serif' font-weight='700' fill='white' text-anchor='middle'>S</text></svg>">
+  <meta name="theme-color" content="#d7263d">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'><path d='M60 16C72 4 92 6 99 15C88 25 70 25 60 16Z' fill='%236aa84f'/><path d='M60 16C53 34 42 52 37 68M52 36C66 46 78 58 83 70' fill='none' stroke='%234a7c3f' stroke-width='6' stroke-linecap='round'/><circle cx='36' cy='86' r='22' fill='%23d7263d'/><circle cx='84' cy='88' r='22' fill='%23d7263d'/></svg>">
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- 시그니처 체리 아이콘: ㅇㅅㅇ (동그라미 두 개를 ㅅ 꼭지로 이은 모양) -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="cherry" viewBox="0 0 120 120">
+      <path class="cherry-leaf" d="M60 16C72 4 92 6 99 15C88 25 70 25 60 16Z"/>
+      <path class="cherry-stem" d="M60 16C53 34 42 52 37 68M52 36C66 46 78 58 83 70"/>
+      <circle class="cherry-fruit" cx="36" cy="86" r="22"/>
+      <circle class="cherry-fruit" cx="84" cy="88" r="22"/>
+      <ellipse class="cherry-shine" cx="27" cy="78" rx="6" ry="4" transform="rotate(-35 27 78)"/>
+      <ellipse class="cherry-shine" cx="75" cy="80" rx="6" ry="4" transform="rotate(-35 75 80)"/>
+    </symbol>
+  </svg>
+
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="#top">오서연<span>.</span></a>
+      <a class="logo" href="#top"><svg class="logo-icon" aria-hidden="true"><use href="#cherry"/></svg>오서연</a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="메뉴 열기">
         <span></span><span></span><span></span>
       </button>
@@ -35,24 +47,30 @@
   <main id="top">
     <!-- 히어로 -->
     <section class="hero">
-      <div class="container">
-        <p class="eyebrow">Web Developer · 법률 서비스 웹 개발 · 운영</p>
-        <h1>상담으로 이어지는 홈페이지,<br>오픈 이후까지 책임집니다</h1>
-        <p class="hero-lead">
-          안녕하세요, 웹 개발자 <strong>오서연</strong>입니다.
-          법무법인과 법률 플랫폼에서 홈페이지, 랜딩페이지, 사건 관리 어드민을 직접 개발하고 운영해 왔습니다.
-          데이터와 사용자 의견을 보고, 실제 상담 유입이 늘어나는 방향으로 고칩니다.
-        </p>
-        <!-- TODO: 현재 회사 경력을 포함한 총 연차가 확정되면 숫자 수정 -->
-        <ul class="hero-facts">
-          <li><strong>6년+</strong><span>웹 개발 · 서비스 기획</span></li>
-          <li><strong>4년</strong><span>법률 서비스 웹 개발</span></li>
-          <li><strong>약 10%</strong><span>랜딩페이지 상담 유입 상승</span></li>
-        </ul>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#contact">유지보수 문의하기</a>
-          <a class="btn btn-ghost" href="#projects">작업 사례 보기</a>
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Web Developer · 법률 서비스 웹 개발 · 운영</p>
+          <h1>상담으로 이어지는 홈페이지,<br><em>오픈 이후까지</em> 책임집니다</h1>
+          <p class="hero-lead">
+            안녕하세요, 웹 개발자 <strong>오서연</strong>입니다.
+            법무법인과 법률 플랫폼에서 홈페이지, 랜딩페이지, 사건 관리 어드민을 직접 개발하고 운영해 왔습니다.
+            데이터와 사용자 의견을 보고, 실제 상담 유입이 늘어나는 방향으로 고칩니다.
+          </p>
+          <!-- TODO: 현재 회사 경력을 포함한 총 연차가 확정되면 숫자 수정 -->
+          <ul class="hero-facts">
+            <li><strong>6년+</strong><span>웹 개발 · 서비스 기획</span></li>
+            <li><strong>4년</strong><span>법률 서비스 웹 개발</span></li>
+            <li><strong>약 10%</strong><span>랜딩페이지 상담 유입 상승</span></li>
+          </ul>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">유지보수 문의하기</a>
+            <a class="btn btn-ghost" href="#projects">작업 사례 보기</a>
+          </div>
         </div>
+        <figure class="hero-visual" aria-hidden="true">
+          <svg class="hero-cherry"><use href="#cherry"/></svg>
+          <figcaption><b>ㅇ</b><i>ㅅ</i><b>ㅇ</b> 을 이으면, 체리</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -221,6 +239,7 @@
 
   <footer class="site-footer">
     <div class="container">
+      <p class="signature"><b>ㅇ</b><i>ㅅ</i><b>ㅇ</b></p>
       <p>&copy; <span id="year">2026</span> 오서연</p>
     </div>
   </footer>
