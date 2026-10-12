@@ -55,6 +55,63 @@ if ('IntersectionObserver' in window) {
   items.forEach((el) => el.classList.add('visible'));
 }
 
+// 전체 프로젝트: 개수 표시와 필터
+const works = [...document.querySelectorAll('.work')];
+const filterBar = document.querySelector('.filters');
+const companyNames = { firm: '법무법인', lawtalk: '로톡', soldoc: '솔닥' };
+const countOf = (key) => (key === 'all' ? works.length : works.filter((w) => w.dataset.tags.split(' ').includes(key)).length);
+
+document.querySelector('.count[data-to="works"]').dataset.to = works.length;
+document.querySelectorAll('[data-count]').forEach((el) => { el.textContent = countOf(el.dataset.count); });
+filterBar.querySelectorAll('.filter').forEach((btn) => {
+  btn.insertAdjacentHTML('beforeend', ` <span class="filter-count">${countOf(btn.dataset.filter)}</span>`);
+});
+
+function applyFilter(key) {
+  // 회사별 필터는 목록에 없는 임시 버튼으로 표시
+  filterBar.querySelector('.filter-temp')?.remove();
+  if (!filterBar.querySelector(`[data-filter="${key}"]`)) {
+    filterBar.firstElementChild.insertAdjacentHTML('afterend',
+      `<button class="filter filter-temp" type="button" data-filter="${key}">${companyNames[key]} <span class="filter-count">${countOf(key)}</span> ✕</button>`);
+  }
+  filterBar.querySelectorAll('.filter').forEach((btn) => btn.classList.toggle('is-active', btn.dataset.filter === key));
+  filterBar.scrollLeft = 0;
+  works.forEach((w) => {
+    const show = key === 'all' || w.dataset.tags.split(' ').includes(key);
+    w.classList.toggle('is-hidden', !show);
+    w.classList.remove('is-entering');
+    if (show && !reduceMotion) {
+      void w.offsetWidth;
+      w.classList.add('is-entering');
+    }
+  });
+}
+
+filterBar.addEventListener('click', (e) => {
+  const btn = e.target.closest('.filter');
+  if (!btn) return;
+  applyFilter(btn.classList.contains('filter-temp') ? 'all' : btn.dataset.filter);
+});
+
+// 경력의 "프로젝트 N건 보기" → 회사별로 걸러서 보여주기
+document.querySelectorAll('.tl-link').forEach((link) => {
+  link.addEventListener('click', () => applyFilter(link.dataset.filter));
+});
+
+// 경력기술서 PDF로 저장 (인쇄 대화상자 → PDF로 저장)
+let openedForPrint = [];
+window.addEventListener('beforeprint', () => {
+  applyFilter('all');
+  document.querySelectorAll('.count').forEach((el) => { el.textContent = el.dataset.to; });
+  openedForPrint = [...document.querySelectorAll('.case-more:not([open])')];
+  openedForPrint.forEach((d) => { d.open = true; });
+  items.forEach((el) => el.classList.add('visible'));
+});
+window.addEventListener('afterprint', () => {
+  openedForPrint.forEach((d) => { d.open = false; });
+});
+document.querySelectorAll('.print-btn').forEach((btn) => btn.addEventListener('click', () => window.print()));
+
 // 숫자 카운트업
 if (!reduceMotion) {
   document.querySelectorAll('.count').forEach((el, i) => {
