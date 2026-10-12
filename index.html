@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- TODO: 이름/포지션 확정 후 title, description 수정 -->
+  <title>Seoyeon Oh | 웹 개발 · 유지보수</title>
+  <meta name="description" content="작은 팀의 웹 서비스를 만들고, 오래 안정적으로 운영되도록 관리하는 웹 개발자 포트폴리오입니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Seoyeon Oh | 웹 개발 · 유지보수">
+  <meta property="og:description" content="웹사이트 제작부터 운영, 유지보수까지 한 사람이 끝까지 책임집니다.">
+  <meta property="og:url" content="https://seoyeom542.github.io/">
+  <meta name="theme-color" content="#0f2341">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230f2341'/><text x='16' y='22' font-size='16' font-family='sans-serif' font-weight='700' fill='white' text-anchor='middle'>S</text></svg>">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top">Seoyeon<span>.</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav">
+        <a href="#services">서비스</a>
+        <a href="#stack">기술 스택</a>
+        <a href="#projects">사례</a>
+        <a href="#maintenance">유지보수</a>
+        <a class="nav-cta" href="#contact">문의하기</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- 히어로 -->
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Web Developer · Freelance</p>
+        <!-- TODO: 이름과 한 줄 포지션 -->
+        <h1>만들고 끝나는 게 아니라,<br>계속 잘 돌아가게 하는 개발자</h1>
+        <p class="hero-lead">
+          안녕하세요, 웹 개발자 <strong>Seoyeon Oh</strong>입니다.
+          작은 팀과 사업자를 위한 웹사이트와 업무용 시스템을 만들고,
+          오픈 이후의 수정과 운영까지 책임지고 맡습니다.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">프로젝트 문의하기</a>
+          <a class="btn btn-ghost" href="#projects">작업 사례 보기</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 강점 3가지 -->
+    <section class="section" id="strengths">
+      <div class="container">
+        <h2 class="section-title reveal">함께 일하면 좋은 점</h2>
+        <div class="grid grid-3">
+          <article class="card reveal">
+            <span class="card-num">01</span>
+            <h3>실무 시스템 경험</h3>
+            <p>실제 업무 현장에서 매일 쓰이는 시스템을 개발하고 운영해 왔습니다. 화면보다 업무 흐름을 먼저 봅니다.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-num">02</span>
+            <h3>빠르고 명확한 소통</h3>
+            <p>진행 상황을 정해진 주기로 공유하고, 기술 용어 대신 이해하기 쉬운 말로 설명합니다.</p>
+          </article>
+          <article class="card reveal">
+            <span class="card-num">03</span>
+            <h3>오픈 이후까지 책임</h3>
+            <p>배포하고 끝내지 않습니다. 오류 대응, 기능 추가, 콘텐츠 수정까지 꾸준히 관리합니다.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 제공 서비스 -->
+    <section class="section section-alt" id="services">
+      <div class="container">
+        <h2 class="section-title reveal">제공 서비스</h2>
+        <div class="grid grid-2">
+          <article class="card service reveal">
+            <h3>웹사이트 제작</h3>
+            <p>회사·서비스 소개 페이지, 랜딩 페이지를 반응형으로 제작합니다.</p>
+          </article>
+          <article class="card service reveal">
+            <h3>업무용 웹 시스템</h3>
+            <p>예약, 문의 관리, 관리자 페이지 등 반복 업무를 줄이는 도구를 만듭니다.</p>
+          </article>
+          <article class="card service reveal">
+            <h3>기존 사이트 개선</h3>
+            <p>느리거나 모바일에서 깨지는 사이트, 오래된 코드를 정리하고 고칩니다.</p>
+          </article>
+          <article class="card service reveal">
+            <h3>유지보수 · 운영</h3>
+            <p>월 단위 계약으로 수정 요청, 장애 대응, 정기 점검을 맡습니다.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 기술 스택 -->
+    <section class="section" id="stack">
+      <div class="container">
+        <h2 class="section-title reveal">기술 스택</h2>
+        <!-- TODO: 실제 주력 기술로 교체 -->
+        <div class="stack reveal">
+          <div class="stack-group">
+            <h3>Frontend</h3>
+            <ul class="tags">
+              <li>HTML/CSS</li><li>JavaScript</li><li>TypeScript</li><li>React</li>
+            </ul>
+          </div>
+          <div class="stack-group">
+            <h3>Backend</h3>
+            <ul class="tags">
+              <li>Node.js</li><li>Java</li><li>Spring Boot</li>
+            </ul>
+          </div>
+          <div class="stack-group">
+            <h3>Data · Infra</h3>
+            <ul class="tags">
+              <li>MySQL</li><li>AWS</li><li>Git/GitHub</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 프로젝트 사례 -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <h2 class="section-title reveal">프로젝트 사례</h2>
+        <p class="section-desc reveal">고객사 정보 보호를 위해 업체명과 실제 화면은 공개하지 않습니다.</p>
+        <!-- TODO: 실제 사례로 교체 (이전 로펌·현재 회사의 고객 정보, 화면, 코드 금지) -->
+        <div class="grid grid-3">
+          <article class="card project reveal">
+            <p class="project-type">업무 시스템</p>
+            <h3>사내 문서·일정 관리 시스템</h3>
+            <p>수기로 관리하던 문서 접수와 일정을 웹에서 한 번에 관리하도록 전환</p>
+            <dl>
+              <dt>역할</dt><dd>기획 참여, 프론트엔드·백엔드 개발, 운영</dd>
+              <dt>기술</dt><dd>React, Spring Boot, MySQL</dd>
+              <dt>결과</dt><dd>담당자 일일 확인 작업 시간 단축</dd>
+            </dl>
+          </article>
+          <article class="card project reveal">
+            <p class="project-type">웹사이트</p>
+            <h3>서비스 소개 · 상담 신청 페이지</h3>
+            <p>모바일 유입이 많은 소개 페이지를 반응형으로 개편하고 상담 신청 기능 추가</p>
+            <dl>
+              <dt>역할</dt><dd>디자인 적용, 퍼블리싱, 배포</dd>
+              <dt>기술</dt><dd>HTML/CSS, JavaScript</dd>
+              <dt>결과</dt><dd>모바일 이탈 감소, 상담 신청 경로 일원화</dd>
+            </dl>
+          </article>
+          <article class="card project reveal">
+            <p class="project-type">유지보수</p>
+            <h3>운영 중인 관리자 페이지 개선</h3>
+            <p>느려진 관리자 화면의 조회 성능을 개선하고 반복 오류를 정리</p>
+            <dl>
+              <dt>역할</dt><dd>원인 분석, 쿼리·화면 개선</dd>
+              <dt>기술</dt><dd>Node.js, MySQL</dd>
+              <dt>결과</dt><dd>주요 목록 화면 로딩 시간 개선</dd>
+            </dl>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 유지보수 방식 -->
+    <section class="section" id="maintenance">
+      <div class="container">
+        <h2 class="section-title reveal">유지보수는 이렇게 진행합니다</h2>
+        <ol class="steps">
+          <li class="reveal">
+            <h3>요청 접수</h3>
+            <p>메신저나 이메일로 요청을 남겨 주시면 영업일 기준 하루 안에 확인 답변을 드립니다.</p>
+          </li>
+          <li class="reveal">
+            <h3>범위·일정 안내</h3>
+            <p>작업 내용과 예상 소요 시간을 먼저 공유하고, 확인을 받은 뒤 시작합니다.</p>
+          </li>
+          <li class="reveal">
+            <h3>작업 · 검수</h3>
+            <p>테스트 환경에서 먼저 확인하실 수 있게 하고, 문제가 없으면 반영합니다.</p>
+          </li>
+          <li class="reveal">
+            <h3>기록 · 정기 점검</h3>
+            <p>변경 내역을 기록으로 남기고, 월 1회 보안 업데이트와 백업 상태를 점검합니다.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 연락처 -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <h2 class="section-title reveal">프로젝트 문의</h2>
+        <p class="section-desc reveal">간단한 수정부터 새 프로젝트까지, 편하게 연락 주세요.</p>
+        <!-- TODO: 실제 이메일과 오픈채팅 링크로 교체 -->
+        <div class="contact-links reveal">
+          <a class="contact-item" href="mailto:your@email.com">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">your@email.com</span>
+          </a>
+          <a class="contact-item" href="https://open.kakao.com/" target="_blank" rel="noopener">
+            <span class="contact-label">KakaoTalk</span>
+            <span class="contact-value">오픈채팅으로 문의</span>
+          </a>
+          <a class="contact-item" href="https://github.com/seoyeom542" target="_blank" rel="noopener">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">github.com/seoyeom542</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year">2026</span> Seoyeon Oh</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
