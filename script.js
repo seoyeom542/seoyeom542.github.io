@@ -146,16 +146,12 @@ if (words.length > 1 && !reduceMotion) {
   }, 2200);
 }
 
-// 체리 타일 누르면 흔들기
-const cherryTile = document.querySelector('.tile-cherry');
-cherryTile.addEventListener('click', () => {
-  cherryTile.classList.remove('is-bouncing');
-  void cherryTile.offsetWidth;
-  cherryTile.classList.add('is-bouncing');
-});
-cherryTile.addEventListener('animationend', (e) => {
-  if (e.animationName === 'bounce') cherryTile.classList.remove('is-bouncing');
-});
+// 서울 현재 시각
+const clock = document.getElementById('clock');
+const fmt = new Intl.DateTimeFormat('ko-KR', { timeZone: 'Asia/Seoul', hour: '2-digit', minute: '2-digit', hour12: false });
+const tickClock = () => { clock.textContent = fmt.format(new Date()); };
+tickClock();
+setInterval(tickClock, 15000);
 
 // 이메일 주소 복사
 document.querySelectorAll('.copy-btn').forEach((btn) => {
