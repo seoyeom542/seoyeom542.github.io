@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>협업 안내 | 오서연</title>
+  <meta name="description" content="오서연과 외주·유지보수로 함께 일하는 방식, 작업 형태, 자주 묻는 질문입니다.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="협업 안내 | 오서연">
+  <meta property="og:description" content="오서연과 외주·유지보수로 함께 일하는 방식, 작업 형태, 자주 묻는 질문입니다.">
+  <meta name="theme-color" content="#f6f5f2">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'><path d='M60 16C72 4 92 6 99 15C88 25 70 25 60 16Z' fill='%236aa84f'/><path d='M60 16C53 34 42 52 37 68M52 36C66 46 78 58 83 70' fill='none' stroke='%234a7c3f' stroke-width='6' stroke-linecap='round'/><circle cx='36' cy='86' r='22' fill='%23d7263d'/><circle cx='84' cy='88' r='22' fill='%23d7263d'/></svg>">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="spotlight" aria-hidden="true"></div>
+  <main class="page">
+    <a class="back" href="./">← 오서연</a>
+
+    <header class="page-head">
+      <p class="kicker">Collaboration</p>
+      <h1>함께 일하는 방식</h1>
+      <p class="page-lead">이미 운영 중인 홈페이지와 서비스를 맡아, 고치고 개선하고 꾸준히 관리하는 일을 주로 합니다. 의사·약사가 매일 쓰는 어드민에서 현장 요청을 받아 빠르게 반영해 온 방식 그대로 일합니다.</p>
+    </header>
+
+    <article class="prose">
+      <h2><small>01</small>진행 과정</h2>
+      <ol class="steps">
+        <li>
+          <h3>요청 접수</h3>
+          <!-- TODO: 현재 근무시간을 고려해 회신 시간 확정 -->
+          <p>이메일로 요청을 받고, 평일 기준 24시간 이내에 1차 회신을 드립니다. 요청마다 작업 기록을 남깁니다.</p>
+        </li>
+        <li>
+          <h3>범위 확인</h3>
+          <p>수정 범위와 예상 일정을 먼저 정리해 공유하고, 확인을 받은 뒤 작업합니다.</p>
+        </li>
+        <li>
+          <h3>작업 · 결과 공유</h3>
+          <p>작업 후 변경 전·후 화면과 함께 결과를 공유합니다.</p>
+        </li>
+        <li>
+          <h3>기록 보관</h3>
+          <p>무엇을 왜 바꿨는지 문서로 남겨, 같은 문제가 반복되지 않게 합니다.</p>
+        </li>
+      </ol>
+
+      <h2><small>02</small>운영 원칙</h2>
+      <ul>
+        <li><strong>변경 전 백업</strong> · 수정 전에 반드시 백업합니다.</li>
+        <li><strong>변경 이력 관리</strong> · 모든 수정은 Git으로 기록해 언제든 되돌릴 수 있습니다.</li>
+        <li><strong>장애 보고</strong> · 문제가 생기면 원인과 조치 내용을 정리해 보고합니다.</li>
+      </ul>
+
+      <h2 id="plans"><small>03</small>작업 형태</h2>
+      <!-- TODO: 가격 정책이 정해지면 '견적 문의'를 금액으로 교체 -->
+      <p>작업 범위를 먼저 확인한 뒤 견적을 드립니다.</p>
+      <div class="plans">
+        <div class="plan">
+          <h3>건별 수정</h3>
+          <p class="plan-price">견적 문의</p>
+          <p>필요할 때 한 건씩</p>
+          <ul class="checks">
+            <li>오류 수정, 문구·이미지 교체</li>
+            <li>구성원·업무 분야 정보 변경</li>
+            <li>작업 전·후 화면 공유</li>
+          </ul>
+        </div>
+        <div class="plan plan-featured">
+          <h3>월 유지보수</h3>
+          <p class="plan-price">견적 문의</p>
+          <p>꾸준히 맡기는 방식</p>
+          <ul class="checks">
+            <li>월 단위 수정 요청 처리</li>
+            <li>상담 버튼·신청 폼 정기 점검</li>
+            <li>보안 업데이트와 백업 확인</li>
+          </ul>
+        </div>
+        <div class="plan">
+          <h3>신규 제작 · 전환</h3>
+          <p class="plan-price">견적 문의</p>
+          <p>새로 만들거나 크게 바꿀 때</p>
+          <ul class="checks">
+            <li>업무 분야별 랜딩페이지</li>
+            <li>상담 신청 흐름 개선</li>
+            <li>노후 PHP·그누보드 사이트 전환</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 id="faq"><small>04</small>자주 묻는 질문</h2>
+      <div class="faq">
+        <details>
+          <summary>회사에 다니면서 하시는데, 연락이 늦지 않나요?</summary>
+          <p>평일 기준 24시간 이내에 1차 회신을 드립니다. 급한 장애 대응 기준은 계약할 때 함께 정합니다.</p>
+        </details>
+        <details>
+          <summary>기존 사이트가 PHP·그누보드로 되어 있어도 맡길 수 있나요?</summary>
+          <p>네. PHP 5·그누보드 기반 서비스를 직접 유지보수하고 React로 전환한 경험이 있습니다. 지금 구조 그대로 유지보수하는 것도, 단계적으로 옮기는 것도 가능합니다.</p>
+        </details>
+        <details>
+          <summary>비용은 어떻게 정해지나요?</summary>
+          <p>요청하신 내용을 확인하고 작업 범위와 예상 시간을 먼저 정리해 드린 뒤 견적을 드립니다. 확인 전에는 작업을 시작하지 않습니다.</p>
+        </details>
+        <details>
+          <summary>소스 코드와 계정은 누구 소유인가요?</summary>
+          <p>모두 의뢰하신 쪽 소유입니다. 작업 내역은 Git으로 기록하고, 계약이 끝나면 정리해서 넘겨 드립니다.</p>
+        </details>
+        <details>
+          <summary>의뢰인 정보 같은 민감한 데이터는 어떻게 다루나요?</summary>
+          <p>필요하면 비밀유지 계약을 맺고 진행합니다. 작업에 필요한 범위만 접근하고, 고객 데이터를 외부로 옮기지 않습니다.</p>
+        </details>
+      </div>
+    </article>
+
+    <nav class="next" aria-label="연락">
+      <div>
+        <small>Contact</small>
+        <a href="mailto:seoyeom542@gmail.com">seoyeom542@gmail.com →</a>
+      </div>
+      <a class="btn btn-ghost" href="./#work">작업 보기</a>
+    </nav>
+  </main>
+  <script src="script.js" defer></script>
+</body>
+</html>
